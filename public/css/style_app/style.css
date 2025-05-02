@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('/image/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.card {
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 1000px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #2575fc;
+}
+.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+  #logo img {
+    position: fixed;
+    top: 2%;
+    left: 3%;
+    width: 100px;
+    height: 40px;
+  }
+  #navbar {
+    position: fixed;
+    top: 1%;
+    right: 3%;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #button{
+    height: 50px;
+    width: 50%;
+    border-radius: 30px;
+    color: #3200f8;
+    font-family:Monospace; 
+    background: #c8fafa;
+  }
+    #button:hover{
+        background: #a8f3f3;
+        color: #000000;
+    }
+  #content {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+  }
+
+  #fot p{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    background-color: rgba(255, 255, 255, 0);
+  }
