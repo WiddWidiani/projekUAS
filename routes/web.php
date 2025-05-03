@@ -19,6 +19,9 @@ Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->na
 Route::post('/register', [RegisterController::class, 'register']);
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('/dashboard');
 })->middleware('auth')->name('dashboard');
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
+Route::get('/articles/{id}', [DashboardController::class, 'show'])->name('articles.show');
