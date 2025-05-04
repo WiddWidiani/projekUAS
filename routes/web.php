@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ArticleController;
 
 Route::get('/', function () {
     return view('home');
@@ -25,3 +26,6 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
 Route::get('/articles/{id}', [DashboardController::class, 'show'])->name('articles.show');
+
+Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index');
+Route::post('/articles', [ArticleController::class, 'store'])->name('articles.store');

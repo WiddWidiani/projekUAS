@@ -11,7 +11,12 @@
     <small>Ditulis pada: {{ $article->created_at->format('d M Y') }}</small>
     <br><br>
 
-    
-    <a href="{{ url('/dashboard') }}">Kembali ke Dashboard</a>
+    {{-- Link menu --}}
+    <a class="nav-link active" href="{{ route('dashboard') }}">Dashboard</a> <br>
+    <a class="nav-link active" href="{{ router('articles') }}">Articles</a> <br>
+    <a class="nav-link active" href="#">Comments</a> <br>
+    <a class="nav-link active" href="#">Articles Comment</a> <br>
+    <a class="nav-link active" href="#">Page Comments</a> <br>
+    <a class="nav-link active" href="#">Pages</a> <br>
 </body>
 </html>

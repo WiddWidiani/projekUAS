@@ -9,8 +9,8 @@ class Article extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'title',
-        'content',
-        'user_id', // Jika ada relasi dengan tabel users
+        'description'
     ];
 }

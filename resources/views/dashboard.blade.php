@@ -25,8 +25,8 @@
     @endif
 
     {{-- Link menu --}}
-    <a class="nav-link active" href="#">Dashboard</a> <br>
-    <a class="nav-link active" href="#">Articles</a> <br>
+    <a class="nav-link active" href="{{ route('dashboard') }}">Dashboard</a> <br>
+    <a class="nav-link active" href="{{ route('articles.store') }}">Articles</a> <br>
     <a class="nav-link active" href="#">Comments</a> <br>
     <a class="nav-link active" href="#">Articles Comment</a> <br>
     <a class="nav-link active" href="#">Page Comments</a> <br>
