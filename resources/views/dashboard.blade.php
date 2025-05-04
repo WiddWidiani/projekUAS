@@ -8,7 +8,6 @@
 <body>
     <h1>Selamat datang, {{ Auth::user()->name }}</h1>
 
-    {{-- articles --}}
     <h2>Daftar Artikel</h2>
     @if ($articles->isEmpty())
         <p>Tidak ada artikel yang tersedia.</p>
@@ -27,9 +26,11 @@
     {{-- Link menu --}}
     <a class="nav-link active" href="{{ route('dashboard') }}">Dashboard</a> <br>
     <a class="nav-link active" href="{{ route('articles.store') }}">Articles</a> <br>
-    <a class="nav-link active" href="#">Comments</a> <br>
+    @if (Auth::user()->role === 'admin')
     <a class="nav-link active" href="#">Articles Comment</a> <br>
     <a class="nav-link active" href="#">Page Comments</a> <br>
     <a class="nav-link active" href="#">Pages</a> <br>
+    <a class="nav-link active" href="{{ route('comments.index') }}">Comments</a> <br>
+    @endif
 </body>
 </html>

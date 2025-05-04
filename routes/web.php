@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\CommentController;
 
 Route::get('/', function () {
     return view('home');
@@ -29,3 +30,9 @@ Route::get('/articles/{id}', [DashboardController::class, 'show'])->name('articl
 
 Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::post('/articles', [ArticleController::class, 'store'])->name('articles.store');
+
+Route::middleware(['auth'])->group(function () {
+Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+Route::delete('/comments/{id}', [CommentController::class, 'destroy'])->name('comments.destroy');
+});

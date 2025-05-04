@@ -26,7 +26,8 @@ class RegisterController extends Controller
         User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Hash::make($request->password), // Pastikan password dienkripsi
+            'password' => Hash::make($request->password), 
+            'role' => 'user',
         ]);
 
         return redirect()->route('login')->with('success', 'Registrasi berhasil! Silakan login.');
