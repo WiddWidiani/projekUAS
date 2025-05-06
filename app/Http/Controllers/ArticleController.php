@@ -7,11 +7,17 @@ use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
+    public function show($id)
+    {
+        $article = Article::findOrFail($id);
+        return view('detail.show', compact('article'));
+    }
+
     public function index()
     {
         $articles = Article::latest()->get();
 
-        return view('articles', compact('articles'));
+        return view('detail', compact('articles'));
     }
 
     public function store(Request $request)
@@ -28,6 +34,7 @@ class ArticleController extends Controller
             'content' => $request->content ?? '',
             'user_id' => Auth::id(),
         ]);
+        
     
         return redirect()->route('articles.index')->with('success', 'Artikel berhasil ditambahkan!');
     }

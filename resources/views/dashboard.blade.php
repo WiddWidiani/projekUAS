@@ -31,6 +31,7 @@
     <a class="nav-link active" href="#">Page Comments</a> <br>
     <a class="nav-link active" href="#">Pages</a> <br>
     <a class="nav-link active" href="{{ route('comments.index') }}">Comments</a> <br>
+    <a href=""> logoutc</a>
     @endif
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/style_app/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <body>
@@ -28,12 +29,12 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <div class="form-group">
-                <button type="submit">Login</button>
-            </div>
+        <div class="d-grid gap-2">
+                <button type="submit" name="login" class="btn btn-outline-dark" >Login</button>
+        </div>
         </form>
         <div class="form-footer">
-            <p>Belum punya akun? <a href="{{ route('register') }}">Daftar di sini</a></p>
+            <p>Don't have an account yet? <a href="{{ route('register') }}">Register here</a></p>
         </div>
     </div>
 </body>
