@@ -21,7 +21,7 @@
     <div class="container text-center mt-5" id="content">
         <h1 class="display-4">Welcome to TICLES</h1>
         <p class="lead">Please login first, to access the website</p>
-        <a href="{{ route('login') }}" class="btn btn-outline-light" id="but">GO TO LOGIN</a>
+        <a href="{{ route('login') }}" class="btn btn-outline-light" id="but">GET STARTED</a>
     </div>
     <footer class="text-center"style="position: fixed; bottom: 0%; width: 100%;">
         <div class="container" id="fot">
