@@ -30,7 +30,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 Route::get('/articles/{id}', [DashboardController::class, 'show'])->name('articles.show');
 
 Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index');
-Route::post('/articles', [ArticleController::class, 'store'])->name('articles.store');
+Route::get('/articles', [ArticleController::class, 'index'])->name('articles');
 Route::get('/detail/{id}', [ArticleController::class, 'show'])->name('articles.show');
 
 Route::middleware(['auth'])->group(function () {
