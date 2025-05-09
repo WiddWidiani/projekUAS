@@ -10,10 +10,8 @@
 </head>
 
 <body>
-    @include('header.navbar')
-
-    <h1>Selamat datang, {{ Auth::user()->name }}</h1>
-        <h2>Daftar Artikel</h2>
+    @include('header.navbar') <br>
+        <h2>Daftar Artikel</h2> <br>
             @if ($articles->isEmpty())
         <p>Tidak ada artikel yang tersedia.</p>
     @else
