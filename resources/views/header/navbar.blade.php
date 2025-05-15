@@ -30,11 +30,11 @@
                        </ul>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                       <a class="nav-link" href="{{ route('about') }}">About Us</a>
                    </li>
                </ul>
                <form class="d-flex">
-                    <h5>Selamat datang, {{ Auth::user()->name }}</h5>
+                   <h5>Selamat datang, {{ Auth::user()->name }}</h5>
                </form>
            </div>
        </div>
