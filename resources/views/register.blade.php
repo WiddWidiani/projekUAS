@@ -8,7 +8,6 @@
 
 </head>
 <body>
-    {{-- Test --}}
     <div class="form-container">
         <h1>Register</h1>
         @if ($errors->any())
