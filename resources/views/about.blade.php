@@ -53,10 +53,10 @@
         <div class="row justify-content-center g-4">
             @php
                 $anggota = [
-                    ['foto' => 'anggota1.jpg', 'nama' => 'I Putu Ananta Adi Wijaya', 'nim' => '123456789'],
+                    ['foto' => 'foto3.jpg', 'nama' => 'I Putu Ananta Adi Wijaya', 'nim' => '123456789'],
                     ['foto' => 'foto1.jpg', 'nama' => 'Timotius March Saputra', 'nim' => '987654321'],
                     ['foto' => 'foto2.jpg', 'nama' => 'Krisna Adi Kusuma', 'nim' => '456789123'],
-                    ['foto' => 'foto3.jpg', 'nama' => 'Ni Kadek Sinta Yunika Sari', 'nim' => '321654987'],
+                    ['foto' => 'anggota1.jpg', 'nama' => 'Ni Kadek Sinta Yunika Sari', 'nim' => '321654987'],
                     ['foto' => 'foto4.jpg', 'nama' => 'Ni Ketut Widiani', 'nim' => '159753468'],
                 ];
             @endphp
