@@ -7,6 +7,6 @@
     <h1>{{ $article->title }}</h1>
     <small>Ditulis pada: {{ $article->created_at->format('d M Y') }}</small>
     <p>{{ $article->description }}</p>
-    <br><br>
+    <br>
     <a href="{{ route('dashboard') }}">Kembali ke Dashboard</a>
 @endsection
