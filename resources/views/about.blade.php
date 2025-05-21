@@ -56,7 +56,7 @@
                     ['foto' => 'foto3.jpg', 'nama' => 'I Putu Ananta Adi Wijaya', 'nim' => '2355201009'],
                     ['foto' => 'foto1.jpg', 'nama' => 'Timotius March Saputra', 'nim' => '2355201020'],
                     ['foto' => 'foto2.jpg', 'nama' => 'Krisna Adi Kusuma', 'nim' => '2355201008'],
-                    ['foto' => 'anggota1.jpg', 'nama' => 'Ni Kadek Sinta Yunika Sari', 'nim' => '2355201017'],
+                    ['foto' => 'anggota1.jpg', 'nama' => 'Sinta Yunika Sari', 'nim' => '2355201017'],
                     ['foto' => 'foto4.jpg', 'nama' => 'Ni Ketut Widiani', 'nim' => '2355201018'],
                 ];
             @endphp
